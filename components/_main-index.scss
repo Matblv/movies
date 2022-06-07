@@ -1,0 +1,70 @@
+.main {
+
+    &__searcher {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.8rem;
+
+
+        background-color: red;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+
+       background-color: blue;
+
+        &__section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 15rem;
+            margin: 0.5rem 0.5rem;
+            padding: 0.2rem 0.5rem;
+
+            background-color: yellow;
+
+            &__div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+
+                width: 100%;
+
+                &__link {
+                    color: black;
+                    text-decoration: none;
+                }
+
+            }                    
+        }
+
+        &__img {
+
+            &__portada__narnia {
+            width: auto;
+            height: 25rem;
+        }
+
+        }
+    }
+
+
+    &__aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: aqua;
+
+        &__img {
+            width: 24%;
+            height: auto;
+        }
+
+
+    }
+}

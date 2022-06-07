@@ -1,0 +1,12 @@
+// @import "variables"; siempre primero
+@import "./main-index";
+@import "./header";
+@import "./footer";
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}

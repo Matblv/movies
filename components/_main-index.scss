@@ -3,8 +3,7 @@
     &__searcher {
         display: flex;
         justify-content: center;
-        margin-bottom: 0.8rem;
-
+        align-items: center;
 
         background-color: red;
     }
@@ -12,43 +11,59 @@
     &__article {
         display: flex;
         flex-direction: column;
-       align-items: center;
+        flex-wrap: nowrap;
 
-       background-color: blue;
-
-        &__section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 15rem;
-            margin: 0.5rem 0.5rem;
-            padding: 0.2rem 0.5rem;
-
-            background-color: yellow;
-
-            &__div {
+            &__section {
                 display: flex;
-                flex-direction: row;
-                justify-content: space-around;
+                flex-direction: column;
                 align-items: center;
+                margin-top: 0.4rem;
+                
 
-                width: 100%;
+                background-color: blue;       
 
-                &__link {
-                    color: black;
-                    text-decoration: none;
+            &__container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 15rem;                
+                padding: 0.2rem 0.5rem;
+
+                background-color: yellow;
+
+                p {
+                    margin: 2px;
+                    border-bottom: dashed black 3px;
+                }
+                
+
+                &__div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    
+
+                    width: 100%;
+
+                    &__link {
+                        color: black;
+                        text-decoration: none;
+                        padding: 5px;
+                        border: 2px black dotted;
+                    }
+
+                }                    
+            }
+
+            &__img {
+
+                &__portada {
+                width: 80%;
+                height: 20rem;
                 }
 
-            }                    
-        }
-
-        &__img {
-
-            &__portada__narnia {
-            width: auto;
-            height: 25rem;
-        }
-
+           }
         }
     }
 
@@ -57,8 +72,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 0.4rem;
 
         background-color: aqua;
+
+        p {
+            padding: 0.5rem;
+            border: solid 5px black;
+            text-decoration: underline;
+        }
 
         &__img {
             width: 24%;
@@ -67,4 +89,44 @@
 
 
     }
+}
+
+@media screen and (min-width:767px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__searcher {
+            display: none;
+        }
+
+        &__article {
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            &__section {
+                margin-top: 0%;
+            
+                &__img {
+
+                    &__portada{
+                    width: 15rem;
+                    height: 25rem;
+                    }
+                }
+            }    
+        }
+
+        &__aside {
+            padding-right: 2rem;
+            margin-top: 0%;
+            max-width: 30%;
+        }
+    
+    }
+
 }

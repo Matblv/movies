@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: yellowgreen;
+
+    &__h3 {
+        font-size: 2rem;
+        color: #0960BD;
+    }
+
+    &__section {
+        display: none;
+
+        &__ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+            flex-wrap: wrap;
+            
+
+
+            background-color: black;
+
+            &__li {
+                color: #429FFD;
+                font-size: 80%;
+                list-style: none;
+                padding: 0% 0.2rem;
+
+            }
+        }
+    }
+}

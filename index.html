@@ -16,51 +16,82 @@
     <header class="header">
         <h1 class="header__h1">Peliculas</h1>
 
-        <section>
-            <ul class="header__ul">
-                <li class="header__ul__li">Inicio</li>
-                <li class="header__ul__li">Descargar</li>
-                <li class="header__ul__li">Ver online</li>
-                <li class="header__ul__li">Donaciones</li>
+        <div class="header__searcher">
+            <input type="text" placeholder="Buscar"></input>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+        </div>
+
+        <section class="header__section__responsive">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+              </svg>
+        </section>
+
+
+        <section class="header__section">
+            <ul class="header__section__ul">
+                <li class="header__section__ul__li">Inicio</li>
+                <li class="header__section__ul__li">Descargar</li>
+                <li class="header__section__ul__li">Ver online</li>
             </ul>
         </section>
 
 
     </header>
-
+   
+    
+   
     <main class="main">
+
         <div class="main__searcher">
             <input type="text" placeholder="Buscar"></input>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
         </div>
 
         <article class="main__article">
-            <img class="main__article__img__portada__narnia" src="./assets/portadas/narnia.jpg" alt="portada-narnia">
+            <section class="main__article__section">
+                <img class="main__article__section__img__portada" src="./assets/portadas/narnia.jpg" alt="portada-narnia">
+
+                <div class="main__article__section__container">
+                    <p>Narnia</p>
+
+                    <div class="main__article__section__container__div">
+                        <a class="main__article__section__container__div__link" href="https://drive.google.com/drive/folders/1T893aEDKDImjh0AII-A6CmVt9ceJ_bY1?usp=sharing" target="_blank">Descargar</a>
+                        <a class="main__article__section__container__div__link" href="https://www.youtube.com/watch?v=PKEimNXpuQo" target="_blank">Ver tráiler</a>
+                    </div>
+                </div>
+            </section>
 
             <section class="main__article__section">
-                <p>Narnia</p>
+                <img class="main__article__section__img__portada" src="./assets/portadas/uncharted.jpg" alt="portada-uncharted">
 
-                <div class="main__article__section__div">
-                    <a class="main__article__section__div__link" href="https://www.youtube.com/watch?v=RZ4OSz_qwdg" target="_blank">Descargar</a>
-                    <a class="main__article__section__div__link" href="https://www.youtube.com/watch?v=RZ4OSz_qwdg" target="_blank">Ver</a>
+                <div class="main__article__section__container">
+                    <p>Uncharted</p>
+
+                    <div class="main__article__section__container__div">
+                        <a class="main__article__section__container__div__link" href="https://drive.google.com/drive/folders/1JYKsNPUlVnoe1uWC6MNc14VTbmwMviVN?usp=sharing" target="_blank">Descargar</a>
+                        <a class="main__article__section__container__div__link" href="https://www.youtube.com/watch?v=kVgsnqAp0Kk" target="_blank">Ver tráiler</a>
+                    </div>
                 </div>
             </section>
         </article>
 
-        <article class="main__article">
-            <img class="main__article__img__portada__narnia" src="./assets/portadas/narnia.jpg" alt="portada-narnia2">
-
-            <section class="main__article__section">
-                <p>Narnia2</p>
-
-                <div class="main__article__section__div">
-                    <a class="main__article__section__div__link" href="https://www.youtube.com/watch?v=RZ4OSz_qwdg" target="_blank">Descargar</a>
-                    <a class="main__article__section__div__link" href="https://www.youtube.com/watch?v=RZ4OSz_qwdg" target="_blank">Ver</a>
-                </div>
-            </section>
-        </article>
 
         <aside class="main__aside">
-            <p>Recomendados de la semana</p>
+            <p>Recomendados del mes</p>
 
             <div>
                 <img class="main__aside__img" src="./assets/portadas/narnia.jpg" alt="narnia3">
@@ -75,15 +106,16 @@
 
     </main>
 
-    <footer>
-        <h3>Peliculas</h3>
+    <footer class="footer">
+        <h3 class="footer__h3">Peliculas</h3>
 
-        <ul>
-            <li>Inicio</li>
-            <li>Descargar</li>
-            <li>Ver online</li>
-            <li>Donaciones</li>
-        </ul>
+        <section class="footer__section">
+            <ul class="footer__section__ul">
+                <li class="footer__section__ul__li">Inicio</li>
+                <li class="footer__section__ul__li">Descargar</li>
+                <li class="footer__section__ul__li">Ver online</li>
+            </ul>
+        </section>
 
     </footer>
 

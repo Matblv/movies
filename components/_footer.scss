@@ -3,11 +3,12 @@
     justify-content: space-between;
     align-items: center;
 
-    background-color: yellowgreen;
+    background-color: #000A21;
+    color: white;
 
     &__h3 {
         font-size: 2rem;
-        color: #0960BD;
+        
     }
 
     &__section {
@@ -22,10 +23,10 @@
             
 
 
-            background-color: black;
+            
 
             &__li {
-                color: #429FFD;
+                
                 font-size: 80%;
                 list-style: none;
                 padding: 0% 0.2rem;

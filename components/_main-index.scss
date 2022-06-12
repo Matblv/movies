@@ -1,11 +1,12 @@
 .main {
+    
 
     &__searcher {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        background-color: red;
+       
     }
 
     &__article {
@@ -19,52 +20,67 @@
                 align-items: center;
                 margin-top: 0.4rem;
                 
-
-                background-color: blue;       
-
-            &__container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 15rem;                
-                padding: 0.2rem 0.5rem;
-
-                background-color: yellow;
-
-                p {
-                    margin: 2px;
-                    border-bottom: dashed black 3px;
-                }
-                
-
-                &__div {
+                &__container {
                     display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
+                    flex-direction: column;
                     align-items: center;
+                    padding: 0.2rem 0.5rem;
+                    width: 15rem;                
+                    height: 6rem;
                     
-
-                    width: 100%;
-
-                    &__link {
-                        color: black;
-                        text-decoration: none;
-                        padding: 5px;
-                        border: 2px black dotted;
+                    &__titulo {
+                        margin: 2px;
+                        height: 5rem;
+                        display: flex;
+                        align-items: flex-start;
+                        text-align: center;
+                        font-size: 1.2rem;
+                        font-family: 'Times New Roman', Times, serif;
+                        
+                        
                     }
 
-                }                    
-            }
+                    &__descrip {
+                        padding-top: 0.5rem;
+                        text-align: start;
+                        font-size: 0.8rem;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                    
 
-            &__img {
+                    &__div {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: flex-end;
+                        
+                        height: 100%;
+                        width: 100%;
+                        
+                        
+                        &__link {
+                            color: black;
+                            text-decoration: none;
+                            padding: 5px;
+                            border: 1px white solid;
+                            font-size: 0.8rem;
+                            font-family: sans-serif
+                        }
 
-                &__portada {
-                width: 80%;
-                height: 20rem;
+                    }                    
                 }
 
-           }
-        }
+                &__img {
+
+                    &__portada {
+                    width: 80%;
+                    height: 20rem;
+                    }
+
+                    
+
+                }
+            }
     }
 
 
@@ -73,12 +89,10 @@
         flex-direction: column;
         align-items: center;
         margin-top: 0.4rem;
-
-        background-color: aqua;
+        
 
         p {
             padding: 0.5rem;
-            border: solid 5px black;
             text-decoration: underline;
         }
 
@@ -98,35 +112,85 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
+        background-color: #001B54;
+        color: white;
+
         &__searcher {
             display: none;
         }
 
         &__article {
-            width: 70%;
+            width: 80%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            flex-wrap: wrap;
 
             &__section {
                 margin-top: 0%;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                width: 16rem;
+
+                &__container {
+                    // background-color: #000f2ed6;
+                    background: linear-gradient(#000f2ed6, #000f2e80);
+                    border-radius: 4px;
+                    box-shadow: 0px 0px 15px 2px black;
+                    width: 14rem;     
+                    height: 20rem;
+                    margin-top: -20.5rem;
+                    opacity: 0; 
+                    transition: opacity 0.5s;
+
+                    &__div {
+                        padding-bottom: 0.2rem;  
+                        
+                        &__link {
+                            border-radius: 3px;
+                            color: white;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                &__container:hover {
+                    opacity: 1;
+                    transition: opacity 1s ;
+                    box-shadow: 0px 0px 12px 10px black;
+                   
+                }
             
                 &__img {
 
-                    &__portada{
+                    &__portada {
                     width: 15rem;
-                    height: 25rem;
+                    height: 22rem;
+                    box-shadow: 0px 0px 10px 5px black;
+                    border-radius: 10px;
+                    border: white 1px solid;                    
                     }
+
+                    
+                    
                 }
             }    
         }
 
         &__aside {
-            padding-right: 2rem;
+            padding: 2px;
             margin-top: 0%;
-            max-width: 30%;
+            max-width: 20%;
+            background-color: #000F2E;
+
+            &__img {
+                width: 49%;
+                height: 12rem;
+                padding: 1px;
+                box-shadow: 0px 5px 5px black;
+            }
         }
     
     }
 
 }
+

@@ -14,16 +14,20 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__h1">Peliculas</h1>
+        <h1 class="header__h1">Peliculas gratis</h1>
 
         <div class="header__searcher">
-            <input type="text" placeholder="Buscar"></input>
+            <input class="header__searcher__input" type="text"></input>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="44" height="44" viewBox="0 0 24 24" stroke-width="0.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M20 5v14" />
+              </svg>
 
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" style="padding-right: 5px;" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <circle cx="10" cy="10" r="7" />
                 <line x1="21" y1="21" x2="15" y2="15" />
-            </svg>
+              </svg>
         </div>
 
         <section class="header__section__responsive">
@@ -38,9 +42,9 @@
 
         <section class="header__section">
             <ul class="header__section__ul">
-                <li class="header__section__ul__li">Inicio</li>
-                <li class="header__section__ul__li">Descargar</li>
-                <li class="header__section__ul__li">Ver online</li>
+                <a href="" style="color:white; text-decoration:none;"><li class="header__section__ul__li">Inicio</li></a>
+                <a href="" style="color:white; text-decoration:none;"><li class="header__section__ul__li">Descargar</li></a>
+                <a href="" style="color:white; text-decoration:none;"><li class="header__section__ul__li">Ver online</li></a>
             </ul>
         </section>
 
@@ -66,11 +70,55 @@
                 <img class="main__article__section__img__portada" src="./assets/portadas/narnia.jpg" alt="portada-narnia">
 
                 <div class="main__article__section__container">
-                    <p>Narnia</p>
+                    <p class="main__article__section__container__titulo">Narnia</p>
+                    <p class="main__article__section__container__descrip">Reparto: Georgie Henley, Anna Popplewell, William Moseley, Skandar Keynes. <br><br> Argumento: Durante la Segunda Guerra Mundial, cuatro hermanos ingleses son enviados a una casa en el campo donde van a estar a salvo de los bombardeos. Un día, Lucy, la hermana pequeña, descubre un armario que la transporta a un mundo mágico llamado Narnia. <br><br> Fecha de estreno: 2005</p>
 
                     <div class="main__article__section__container__div">
                         <a class="main__article__section__container__div__link" href="https://drive.google.com/drive/folders/1T893aEDKDImjh0AII-A6CmVt9ceJ_bY1?usp=sharing" target="_blank">Descargar</a>
                         <a class="main__article__section__container__div__link" href="https://www.youtube.com/watch?v=PKEimNXpuQo" target="_blank">Ver tráiler</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__article__section">
+                <img class="main__article__section__img__portada" src="./assets/portadas/uncharted.jpg" alt="portada-uncharted"> 
+                
+            
+
+                <div class="main__article__section__container">
+                    <p class="main__article__section__container__titulo">Uncharted</p>
+
+                    <div class="main__article__section__container__div">
+                        <a class="main__article__section__container__div__link" href="https://drive.google.com/drive/folders/1JYKsNPUlVnoe1uWC6MNc14VTbmwMviVN?usp=sharing" target="_blank">Descargar</a>
+                        <a class="main__article__section__container__div__link" href="https://www.youtube.com/watch?v=kVgsnqAp0Kk" target="_blank">Ver tráiler</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__article__section">
+                <img class="main__article__section__img__portada" src="./assets/portadas/piratas del caribe 1.jpg" alt="portada-piratas del caribe 1">
+
+                <div class="main__article__section__container">
+                    <p class="main__article__section__container__titulo">Piratas del caribe - <br> La maldición del perla negra</p>
+                    
+
+                    <div class="main__article__section__container__div">
+                        <a class="main__article__section__container__div__link" href="https://drive.google.com/drive/folders/1JYKsNPUlVnoe1uWC6MNc14VTbmwMviVN?usp=sharing" target="_blank">Descargar</a>
+                        <a class="main__article__section__container__div__link" href="https://www.youtube.com/watch?v=kVgsnqAp0Kk" target="_blank">Ver tráiler</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__article__section">
+                <img class="main__article__section__img__portada" src="./assets/portadas/piratas del caribe 2.jpg" alt="portada-piratas del caribe 2">
+
+                <div class="main__article__section__container">
+                    <p class="main__article__section__container__titulo">Piratas del caribe - <br> El cofre de la muerte</p>
+
+                    <div class="main__article__section__container__div">
+                        
+                        <a class="main__article__section__container__div__link" href="https://drive.google.com/drive/folders/1JYKsNPUlVnoe1uWC6MNc14VTbmwMviVN?usp=sharing" target="_blank">Descargar</a>
+                        <a class="main__article__section__container__div__link" href="https://www.youtube.com/watch?v=kVgsnqAp0Kk" target="_blank">Ver tráiler</a>
                     </div>
                 </div>
             </section>
@@ -87,6 +135,7 @@
                     </div>
                 </div>
             </section>
+
         </article>
 
 
@@ -94,13 +143,21 @@
             <p>Recomendados del mes</p>
 
             <div>
-                <img class="main__aside__img" src="./assets/portadas/narnia.jpg" alt="narnia3">
+                <a href="">
+                    <img class="main__aside__img" src="./assets/portadas/narnia.jpg" alt="">
+                </a>
             
-                <img class="main__aside__img" src="./assets/portadas/narnia.jpg" alt="narnia3">
+                <a href="">
+                    <img class="main__aside__img" src="./assets/portadas/piratas del caribe 1.jpg" alt="">
+                </a>
 
-                <img class="main__aside__img" src="./assets/portadas/narnia.jpg" alt="narnia3">
-                
-                <img class="main__aside__img" src="./assets/portadas/narnia.jpg" alt="narnia3">
+                <a href="">
+                    <img class="main__aside__img" src="./assets/portadas/piratas del caribe 2.jpg" alt="">
+                </a>
+
+                <a href="">
+                    <img class="main__aside__img" src="./assets/portadas/uncharted.jpg" alt="">
+                </a>    
             </div>
         </aside>
 

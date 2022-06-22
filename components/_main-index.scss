@@ -42,7 +42,7 @@
                     }
 
                     &__descrip {
-                        padding-top: 0.5rem;
+                        padding-top: 1rem;
                         text-align: start;
                         font-size: 0.9rem;
                         font-family: Arial, Helvetica, sans-serif;
@@ -67,8 +67,6 @@
                             border: 1px white solid;
                             font-size: 0.8rem;
                             font-family: sans-serif;
-                            background-color: rgba(0, 0, 0, 0.200);
-                           
                         }
 
                     }                    
@@ -119,6 +117,8 @@
         background-color: #001B54;
         color: white;
 
+
+
         &__searcher {
             display: none;
         }
@@ -137,7 +137,7 @@
                 width: 16rem;
 
                 &__container {
-                    background: linear-gradient(#000f2ed6, #000f2e80);
+                    background: linear-gradient(#000f2eeb, #000f2eb4);
                     border-radius: 4px;
                     box-shadow: 0px 0px 15px 2px black;
                     width: 15rem;     
@@ -153,6 +153,9 @@
                             border-radius: 3px;
                             color: white;
                             font-size: 1rem;
+                            background-color: #000F2E;
+                            display: flex;
+                            align-items: center;
                         }
                     }
 
@@ -174,11 +177,14 @@
                 }
 
                 &__container--individual {
-                    border-radius: 1rem;
+                    border-radius: 10px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
                     padding: 1rem;
                     width: 40%;
-                    height: 30rem;
+                    height: 32rem;
                     background-color: #0033a2c4;
+                    border: white 1px solid; 
                 }
 
             
@@ -194,9 +200,11 @@
 
                     &__portada--individual {
                         height: 32rem;
-                        width: auto;
+                        width: 21rem;
                         box-shadow: 0px 0px 10px 5px black;
                         border-radius: 10px;
+                        border-end-end-radius: 0;
+                        border-top-right-radius: 0;
                         border: white 1px solid; 
                     }
                 }
@@ -206,9 +214,34 @@
                 padding-top: 2rem;      
                 display: flex;
                 flex-direction: row;
-                justify-content: space-evenly;
+                justify-content: center;
+                
                 
             }
+
+            &__verahora {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3rem;
+                text-align: center;
+                margin-bottom: 2rem;
+                
+                background-color: #000000c4;
+
+               &__container {
+                background-color: #000f2e;
+                padding: 1rem 3rem;
+
+                    &__txt {
+                        font-size: 2rem;
+                        font-family: serif;
+                        margin-bottom: 10px;
+
+                    }
+               }
+            }
+
         }
 
         &__aside {

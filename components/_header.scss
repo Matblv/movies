@@ -37,7 +37,10 @@
             justify-content: space-around;
             flex-wrap: wrap;
            
-
+            &__a {
+                color: white;
+                text-decoration: none;
+            }
             
 
             &__li {
